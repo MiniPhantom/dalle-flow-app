@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "dalle-app"
+version = "0.1.0"
+description = "A showcase of DALL-E and GLIDE using DALL-E Flow"
+authors = ["Nicolai B. Thomsen <nicolai.thomsen@nttdata.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+streamlit = "^1.8.1"
+docarray = {extras = ["common"], version = "^0.13.6"}
+jina = "^3.3.23"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+pre-commit = "^2.18.1"
+jupyter = "^1.0.0"
+ipykernel = "^6.13.0"
+watchdog = "^2.1.7"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
